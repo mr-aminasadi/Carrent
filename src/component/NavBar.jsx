@@ -39,7 +39,7 @@ const NavBar = () => {
             className="ml-4 mr-2 text-gray-400 cursor-pointer duration-200 hover:text-black/80"
           />
           <input
-            className="focus:outline-none text-gray-400 w-full p-2"
+            className="border-none focus:ring-0 focus:outline-none text-gray-400 w-full p-2"
             type="text"
             placeholder="Search something here"
           />
