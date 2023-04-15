@@ -9,11 +9,15 @@ module.exports = {
       spacing: {
         '123': '31rem',
         '160': '38rem'
+      },
+      screens: {
+        'xsm': '480px',
       }
     },
     fontFamily:{
       plus:['Plus Jakarta Sans','sans-serif']
-    }
+    },
+   
   },
   plugins: [
     require('flowbite/plugin')
