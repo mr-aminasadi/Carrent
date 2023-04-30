@@ -1,6 +1,12 @@
 import { BiSort } from "react-icons/bi";
 import { white } from "tailwindcss/colors";
 
+// class repeat
+const selectClass="w-20 md:w-28 bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 text-sm rounded-lg p-0";
+const labelClass="block my-2 text-sm md:text-base font-bold text-gray-900";
+
+
+
 const FilterCars = () => {
   return (
     <section className="max-w-[1640px] max-auto px-6 py-4 md:px-16 flex flex-col lg:flex-row justify-between items-center gap-2">
@@ -19,29 +25,29 @@ const FilterCars = () => {
         {/* selection */}
         <div className="flex mt-4">
             <div className="border-r-2 border-gray-200">
-                <label for="location" class="block my-2 text-sm md:text-base font-bold text-gray-900">Locations</label>
-                    <select id="location" class="appearance-none bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 text-sm rounded-lg p-0">
-                        <option selected>Select Yor City</option>
+                <label for="location" class={labelClass}>Locations</label>
+                    <select id="location" class={selectClass}>
+                        <option selected>City</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                     </select>
             </div>
-            <div className="border-r-2 border-gray-200 ml-3 md:ml-6">
-                <label for="date" class="block my-2 text-base font-bold text-gray-900">Date</label>
-                    <select id="date" class="bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 text-sm rounded-lg p-0">
-                        <option selected>Select Yor Date</option>
+            <div className="border-r-2 border-gray-200 ml-2 md:ml-4">
+                <label for="date" class={labelClass}>Date</label>
+                    <select id="date" class={selectClass}>
+                        <option selected>Date</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                     </select>
             </div>
-            <div className="ml-3 md:ml-6">
-                <label for="time" class="block my-2 text-base font-bold text-gray-900">Time</label>
-                    <select id="time" class="bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 text-sm rounded-lg p-0">
-                        <option selected>Select Yor Time</option>
+            <div className="ml-2 md:ml-4">
+                <label for="time" class={labelClass}>Time</label>
+                    <select id="time" class={selectClass}>
+                        <option selected>Time</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>
@@ -71,29 +77,29 @@ const FilterCars = () => {
         {/* selection */}
         <div className="flex mt-4">
             <div className="border-r-2 border-gray-200">
-                <label for="location" class="block my-2 text-base font-bold text-gray-900">Locations</label>
-                    <select id="location" class=" bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 text-sm rounded-lg p-0">
-                        <option selected>Select Yor City</option>
+                <label for="location" class={labelClass}>Locations</label>
+                    <select id="location" class={selectClass}>
+                        <option selected>City</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                     </select>
             </div>
-            <div className="border-r-2 border-gray-200 ml-3 md:ml-6">
-                <label for="date" class="block my-2 text-base font-bold text-gray-900">Date</label>
-                    <select id="date" class=" bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 text-sm rounded-lg p-0">
-                        <option selected >Select Your Date</option>
+            <div className="border-r-2 border-gray-200 ml-2 md:ml-4">
+                <label for="date" class={labelClass}>Date</label>
+                    <select id="date" class={selectClass}>
+                        <option selected >Date</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>
                         <option value="DE">Germany</option>
                     </select>
             </div>
-            <div className="ml-3 md:ml-6">
-                <label for="time" class="block my-2 text-base font-bold text-gray-900">Time</label>
-                    <select id="time" class="bg-transparent border-transparent focus:ring-0 focus:border-none text-gray-500 rounded-lg p-0">
-                        <option selected>Select Yor Time</option>
+            <div className="ml-2 md:ml-4">
+                <label for="time" class={labelClass}>Time</label>
+                    <select id="time" class={selectClass}>
+                        <option selected>Time</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                         <option value="FR">France</option>

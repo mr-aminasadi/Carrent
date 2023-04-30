@@ -2,7 +2,7 @@ import { FaSistrix, FaSlidersH, FaBell, FaHeart, FaCog } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <nav className="max-w-[1640px] max-auto grid grid-cols-2 md:grid-cols-3 px-8 py-4 md:px-16 md:py-8 bg-white shadow-sm">
+    <nav className="max-w-[1640px] max-auto grid grid-cols-2 md:grid-cols-3 px-8 py-3.5 md:px-16 md:py-5 bg-white shadow-sm">
       {/* logo */}
       <div className="md:order-1 font-bold text-2xl md:text-4xl text-sky-500 ">
         <p>
