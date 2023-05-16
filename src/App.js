@@ -5,6 +5,8 @@ import "./index.css";
 import NavBar from "./component/NavBar";
 import HeadLine from "./component/HeadLine";
 import FilterCars from "./component/FilterCars";
+import PopularCar from "./component/PopularCar";
+
 
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
       <NavBar/>
       <HeadLine/>
       <FilterCars/>
+      <PopularCar/>
     </>
     
   );
