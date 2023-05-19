@@ -6,6 +6,7 @@ import NavBar from "./component/NavBar";
 import HeadLine from "./component/HeadLine";
 import FilterCars from "./component/FilterCars";
 import PopularCar from "./component/PopularCar";
+import RecomendationCar from "./component/RecomendationCar";
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
       <HeadLine/>
       <FilterCars/>
       <PopularCar/>
+      <RecomendationCar/>
     </>
     
   );
