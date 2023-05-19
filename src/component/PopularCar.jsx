@@ -1,6 +1,8 @@
 import { FaRegHeart } from "react-icons/fa";
 import { BsEvStationFill,BsRecord2Fill,BsFillPeopleFill } from "react-icons/bs";
 import {PopularCars} from "./../data/data"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const PopularCar = () => {
     return ( 
@@ -12,15 +14,39 @@ const PopularCar = () => {
             </div>
 
             {/* Card cars */}
+            <Swiper  spaceBetween={50}
+                     slidesPerView={4}
+                     breakpoints={{
+                        370: {
+                          // width: 370,
+                          slidesPerView: 1,
+                        },
+                        520: {
+                          // width: 520,
+                          slidesPerView: 2,
+                        },
+                        760: {
+                          // width: 760,
+                          slidesPerView: 3,
+                        },
+                        1024: {
+                          // width: 1024,
+                          slidesPerView: 4,
+                        },
+                      }} >
             <div className="grid grid-cols-4 gap-4 ">
                 {PopularCars.map((item,index)=>(
+                    <SwiperSlide>
                     <div key={index} className="p-6 rounded-md bg-white">
                         <div className="flex justify-between">
                             <p className="font-bold text-xl">{item.name}</p>
                             <span><FaRegHeart/></span>
                         </div>
                         <p className="font-bold text-sm text-secondary-300">{item.type}</p>
+                        <div className="w-full flex items-center justify-center">
                         <img src={item.image} alt={item.name} srcset="" className="mt-14 mb-14"/>
+                        </div>
+                        
                         {/* ----------- */}
                         <div className="flex justify-between items-center gap-3 text-secondary-300">
                             <div className="flex">
@@ -42,8 +68,10 @@ const PopularCar = () => {
                             <button className='bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded duration-300'>Ren Now</button>
                         </div>
                     </div>
+                    </SwiperSlide>
                 ))}
             </div>
+            </Swiper>
 
         </section>
      );
