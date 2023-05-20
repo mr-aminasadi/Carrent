@@ -26,7 +26,7 @@ const PopularCar = () => {
         spaceBetween={50}
         slidesPerView={4}
         breakpoints={{
-          370: {
+          320: {
             // width: 370,
             slidesPerView: 1,
           },

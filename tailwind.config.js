@@ -21,7 +21,7 @@ module.exports = {
           300:'#90A3BF',
           400:'#596780',
           500:'#1A202C',
-        }
+        },
       }
     },
     fontFamily:{
