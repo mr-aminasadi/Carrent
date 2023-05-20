@@ -19,10 +19,10 @@ const RecomendationCar = () => {
       {/* Card cars */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {RecommendationCar.map((item, index) => (
-          <div key={index} className="p-6 rounded-md bg-white">
+          <div key={index} className="p-6 rounded-md bg-white shadow-sm">
             <div className="flex justify-between">
               <p className="font-bold text-xl">{item.name}</p>
-              <span>
+              <span className="cursor-pointer">
                 <FaRegHeart />
               </span>
             </div>
@@ -62,6 +62,15 @@ const RecomendationCar = () => {
             </div>
           </div>
         ))}
+      </div>
+      {/* button show more */}
+      <div className="flex justify-center mt-8">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded duration-300">
+          Show More
+        </button>
+      </div>
+      <div className="flex justify-end">
+        <p className="text-secondary-300 font-medium text-sm">120 car</p>
       </div>
     </section>
   );

@@ -47,10 +47,10 @@ const PopularCar = () => {
         
           {PopularCars.map((item, index) => (
             <SwiperSlide>
-              <div key={index} className="p-6 rounded-md bg-white">
+              <div key={index} className="p-6 rounded-md bg-white shadow-sm">
                 <div className="flex justify-between">
                   <p className="font-bold text-xl">{item.name}</p>
-                  <span>
+                  <span className="cursor-pointer">
                     <FaRegHeart />
                   </span>
                 </div>
